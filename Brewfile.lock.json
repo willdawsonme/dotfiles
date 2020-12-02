@@ -2,10 +2,19 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "6debfdc6b453b7c62bad3fba4836ec24561fac73"
+        "revision": "034459da8e6cd11076c578f0ac067fd50d1b14fa"
       },
       "homebrew/core": {
-        "revision": "65220c78cb2bf80f88cf6ff8a8f9f282b25c9c91"
+        "revision": "85038262e7c06ac1544f6031189d36bbfde0b3b6"
+      },
+      "homebrew/cask": {
+        "revision": "8dcbc4bdfe294e37781e3a6c5e75ac14c409ddd7"
+      },
+      "homebrew/cask-fonts": {
+        "revision": "40b132f111dae71032287dbba323e0d758b003e6"
+      },
+      "epk/epk": {
+        "revision": "74ef3c1a4e2541bbc008bc33431d8256fab5e144"
       }
     },
     "brew": {
@@ -61,7 +70,7 @@
         }
       },
       "iterm2": {
-        "version": "3.4.1",
+        "version": "3.4.2",
         "options": {
           "full_name": "iterm2"
         }
@@ -73,19 +82,19 @@
         }
       },
       "sketch": {
-        "version": "70-108797",
+        "version": "70.1-108880",
         "options": {
           "full_name": "sketch"
         }
       },
       "slack": {
-        "version": "4.11.2",
+        "version": "4.11.3",
         "options": {
           "full_name": "slack"
         }
       },
       "tower": {
-        "version": "6.0,256:90c50e48",
+        "version": "6.1,258:9c97138e",
         "options": {
           "full_name": "tower"
         }
@@ -95,18 +104,31 @@
         "options": {
           "full_name": "visual-studio-code"
         }
+      },
+      "font-fira-code-nerd-font": {
+        "version": "2.1.0",
+        "options": {
+          "full_name": "font-fira-code-nerd-font"
+        }
+      },
+      "font-sf-mono-nerd-font": {
+        "version": "15.0d5e1",
+        "options": {
+          "full_name": "font-sf-mono-nerd-font"
+        }
       }
     },
     "mas": {
-      "moom": null
+      "moom": null,
+      "alfred": null
     }
   },
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "2.5.11",
+        "HOMEBREW_VERSION": "2.6.0",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "65220c78cb2bf80f88cf6ff8a8f9f282b25c9c91",
+        "Homebrew/homebrew-core": "85038262e7c06ac1544f6031189d36bbfde0b3b6",
         "CLT": "12.2.0.0.1.1604076827",
         "Xcode": "12.0",
         "macOS": "11.0.1"
