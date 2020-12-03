@@ -5,10 +5,10 @@
         "revision": "6fa389091d1b7450df0701d6a0d20e862bda6507"
       },
       "homebrew/core": {
-        "revision": "e24f5681e7e2a9667361686f2f4896f0c480af06"
+        "revision": "187603f81c0bff7362000cb3d9d89aa7ec9b0d61"
       },
       "homebrew/cask": {
-        "revision": "f4421c157b6e9c0d9b933933381feab375d61c0a"
+        "revision": "d1a36978c9a5ca03f6da6dc3ed6b8ad930e50b79"
       },
       "homebrew/cask-fonts": {
         "revision": "4232b261cb924794b61eeb175aee57d2bddcb90f"
@@ -70,7 +70,7 @@
         }
       },
       "iterm2": {
-        "version": "3.4.1",
+        "version": "3.4.2",
         "options": {
           "full_name": "iterm2"
         }
@@ -82,19 +82,19 @@
         }
       },
       "sketch": {
-        "version": "70-108797",
+        "version": "70.1-108880",
         "options": {
           "full_name": "sketch"
         }
       },
       "slack": {
-        "version": "4.11.2",
+        "version": "4.11.3",
         "options": {
           "full_name": "slack"
         }
       },
       "tower": {
-        "version": "6.0,256:90c50e48",
+        "version": "6.1,258:9c97138e",
         "options": {
           "full_name": "tower"
         }
@@ -128,7 +128,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "2.6.0",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "e24f5681e7e2a9667361686f2f4896f0c480af06",
+        "Homebrew/homebrew-core": "187603f81c0bff7362000cb3d9d89aa7ec9b0d61",
         "CLT": "12.2.0.0.1.1604076827",
         "Xcode": "12.0",
         "macOS": "11.0.1"
