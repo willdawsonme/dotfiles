@@ -1,5 +1,8 @@
 # https://git-scm.com/docs/git-config
 
+[alias]
+  s = status -s -b
+
 [core]
 	# Use custom `.gitignore`.
 	excludesfile = ~/.gitignore_global
@@ -11,7 +14,7 @@
 
 [color]
   # Use colors in Git commands that are capable of colored output when
-	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+  # outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
   ui = true
 
 [color "branch"]

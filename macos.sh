@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Ask for the administrator password upfront
 sudo -v
@@ -28,11 +28,22 @@ brew bundle install
 # Link files
 ln -s "${HOME}/code/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
 ln -s "${HOME}/code/dotfiles/.gitconfig" "${HOME}/.gitconfig"
+ln -s "${HOME}/code/dotfiles/.hushlogin" "${HOME}/.hushlogin"
 
 # Link .zshrc
 if [ ! -f "${HOME}/.zshrc" ]; then
   echo "Linking .zshrc"
   ln -s "${HOME}/code/dotfiles/.zshrc" "${HOME}/.zshrc"
+fi
+
+export ZSH=~/.oh-my-zsh
+if [ ! -d $ZSH ]; then
+  echo "Installing oh-my-zsh"
+  git clone https://github.com/robbyrussell/oh-my-zsh.git $ZSH
+  git clone https://github.com/denysdovhan/spaceship-prompt.git $ZSH/custom/themes/spaceship-prompt --depth=1
+  ln -s "$ZSH/custom/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH/custom/themes/spaceship.zsh-theme"
+  git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH/custom/plugins/zsh-autosuggestions
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/custom/plugins/zsh-syntax-highlighting
 fi
 
 source "${HOME}/.zshrc"
