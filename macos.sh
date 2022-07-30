@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
 # Ask for the administrator password upfront
 sudo -v
 
@@ -24,6 +28,7 @@ if bin/is-executable brew; then
   echo "Homebrew already installed"
 else
   echo "Installing Homebrew"
+  bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 # Install Homebrew packages
