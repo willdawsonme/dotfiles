@@ -2,16 +2,16 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "6fa389091d1b7450df0701d6a0d20e862bda6507"
+        "revision": "05ad77b2c2633684508624fe773586778ab01ffc"
       },
       "homebrew/core": {
-        "revision": "187603f81c0bff7362000cb3d9d89aa7ec9b0d61"
+        "revision": "ff20a31ae0cd644fdccb51cdc32aaa9936c9d2ac"
       },
       "homebrew/cask": {
-        "revision": "d1a36978c9a5ca03f6da6dc3ed6b8ad930e50b79"
+        "revision": "5d4f50b7cf02655effffd2b537b979bc0756356e"
       },
       "homebrew/cask-fonts": {
-        "revision": "4232b261cb924794b61eeb175aee57d2bddcb90f"
+        "revision": "568b3a271cb2a34388c2919a65b69a0cbd28efa2"
       },
       "epk/epk": {
         "revision": "74ef3c1a4e2541bbc008bc33431d8256fab5e144"
@@ -19,26 +19,28 @@
     },
     "brew": {
       "git": {
-        "version": "2.29.2",
+        "version": "2.30.1",
         "bottle": {
-          "cellar": "/usr/local/Cellar",
-          "prefix": "/usr/local",
+          "rebuild": 0,
+          "cellar": "/opt/homebrew/Cellar",
+          "prefix": "/opt/homebrew",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
+            "arm64_big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/git-2.30.1.arm64_big_sur.bottle.tar.gz",
+              "sha256": "53c147ae99043706072a5ada0ecf764a8f386fb4f3afa7aa20546cc33a349d84"
+            },
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.29.2.big_sur.bottle.tar.gz",
-              "sha256": "99ffa981e42bfb6ed77fc1a9f4d1dc07681b2ba532ffc122d02b75eb002047e1"
+              "url": "https://homebrew.bintray.com/bottles/git-2.30.1.big_sur.bottle.tar.gz",
+              "sha256": "c0be5c5895bd3a85bd83953fd9f6fec3864d8ea419b4678b43afaac7217b9853"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.29.2.catalina.bottle.tar.gz",
-              "sha256": "47cffc0d84e2a273cc6088802633e1d4d1fc8afe67633ed8487b497cd78c54f8"
+              "url": "https://homebrew.bintray.com/bottles/git-2.30.1.catalina.bottle.tar.gz",
+              "sha256": "0dd5f43dc263da3d87a83216392fedd96774bd0c9f89e2dc717c549b1803e8d6"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.29.2.mojave.bottle.tar.gz",
-              "sha256": "97cd781a7060f6c1dc456d36e6d17d68ec78470affe3fc0b1d8ff46402be6fcf"
-            },
-            "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.29.2.high_sierra.bottle.tar.gz",
-              "sha256": "b0ad755307e1f83e0c844aeef94774e499ebb85f1e36934966ac9bb31618da61"
+              "url": "https://homebrew.bintray.com/bottles/git-2.30.1.mojave.bottle.tar.gz",
+              "sha256": "c84740ee72f1909fe019bba32ccf265b393df5c2fbd5d31886cca5904928f1b9"
             }
           }
         }
@@ -52,55 +54,55 @@
         }
       },
       "alfred": {
-        "version": "4.2.1_1187",
+        "version": "4.3.2,1221",
         "options": {
           "full_name": "alfred"
         }
       },
       "dropbox": {
-        "version": "latest",
+        "version": "116.4.368",
         "options": {
           "full_name": "dropbox"
         }
       },
       "google-chrome": {
-        "version": "87.0.4280.67",
+        "version": "88.0.4324.192,4324.192",
         "options": {
           "full_name": "google-chrome"
         }
       },
       "iterm2": {
-        "version": "3.4.2",
+        "version": "3.4.4",
         "options": {
           "full_name": "iterm2"
         }
       },
       "notion": {
-        "version": "2.0.8",
+        "version": "2.0.11",
         "options": {
           "full_name": "notion"
         }
       },
       "sketch": {
-        "version": "70.1-108880",
+        "version": "70.5,109233",
         "options": {
           "full_name": "sketch"
         }
       },
       "slack": {
-        "version": "4.11.3",
+        "version": "4.13.0",
         "options": {
           "full_name": "slack"
         }
       },
       "tower": {
-        "version": "6.1,258:9c97138e",
+        "version": "6.3,273:53291173",
         "options": {
           "full_name": "tower"
         }
       },
       "visual-studio-code": {
-        "version": "1.51.1",
+        "version": "1.53.2",
         "options": {
           "full_name": "visual-studio-code"
         }
@@ -126,12 +128,12 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "2.6.0",
-        "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "187603f81c0bff7362000cb3d9d89aa7ec9b0d61",
-        "CLT": "12.2.0.0.1.1604076827",
+        "HOMEBREW_VERSION": "3.0.2",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "ff20a31ae0cd644fdccb51cdc32aaa9936c9d2ac",
+        "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.0",
-        "macOS": "11.0.1"
+        "macOS": "11.1"
       }
     }
   }

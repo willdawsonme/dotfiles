@@ -13,12 +13,17 @@ if [ ! -d "${HOME}/code" ]; then
   mkdir -p "${HOME}/code"
 fi
 
+CPU=$(sysctl -n machdep.cpu.brand_string)
+UNAME_MACHINE=$(uname -m)
+if [[ $CPU == *Apple* ]] || [[ $UNAME_MACHINE == "arm64" ]]; then
+  export PATH="/opt/homebrew/bin:$PATH"
+fi
+
 # Install Homebrew https://brew.sh
 if bin/is-executable brew; then
   echo "Homebrew already installed"
 else
   echo "Installing Homebrew"
-  bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 # Install Homebrew packages
